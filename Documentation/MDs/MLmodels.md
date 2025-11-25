@@ -1,0 +1,690 @@
+Machine Learning models
+
+Machine Learning (ML) models are algorithms that learn patterns from data and use this knowledge to make predictions or decisions without being explicitly programmed. Here’s an overview of various types of machine learning models:
+
+### 1. **Supervised Learning Models**
+
+These models learn from labeled data. Each training example includes an input and an output. The model makes predictions and adjusts based on the error between its prediction and the actual outcome.
+
+- **Linear Regression**: Used for predicting a continuous variable.
+- **Logistic Regression**: Used for binary classification problems.
+- **Decision Trees**: Models that use a tree-like graph of decisions.
+- **Support Vector Machines (SVM)**: Used for classification by finding the hyperplane that best divides a dataset into classes.
+- **Neural Networks**: Composed of layers of nodes, suitable for both regression and classification.
+- **Random Forests**: Ensemble of decision trees to improve accuracy and control overfitting.
+- **Gradient Boosting Machines (GBM)**: Ensemble of weak models that iteratively correct errors.
+
+### 2. **Unsupervised Learning Models**
+
+These models find hidden patterns or intrinsic structures in input data without labeled responses.
+
+- **K-Means Clustering**: Partitions data into k clusters where each data point belongs to the cluster with the nearest mean.
+- **Hierarchical Clustering**: Builds a hierarchy of clusters using a bottom-up or top-down approach.
+- **Principal Component Analysis (PCA)**: Reduces dimensionality of data by transforming to a new set of variables (principal components).
+- **t-Distributed Stochastic Neighbor Embedding (t-SNE)**: Visualizes high-dimensional data by reducing it to two or three dimensions.
+
+### 3. **Semi-Supervised Learning Models**
+
+These models use both labeled and unlabeled data for training. Typically, a small amount of labeled data and a large amount of unlabeled data are used.
+
+- **Self-Training**: Uses a model trained on labeled data to label the unlabeled data, then retrains with the newly labeled data.
+- **Co-Training**: Uses two or more models trained on different views of the data to label unlabeled data iteratively.
+
+### 4. **Reinforcement Learning Models**
+
+These models learn to make sequences of decisions by receiving feedback in the form of rewards or punishments.
+
+- **Q-Learning**: A value-based method that aims to find the optimal action-selection policy using a Q-function.
+- **Deep Q-Networks (DQN)**: Combines Q-learning with deep neural networks for complex environments.
+- **Policy Gradient Methods**: Learn the policy directly by optimizing the expected reward.
+
+### 5. **Ensemble Learning Models**
+
+These models combine multiple learning algorithms to obtain better predictive performance.
+
+- **Bagging (Bootstrap Aggregating)**: Improves model accuracy by training multiple instances of the same model on different random subsets of the training data.
+- **Boosting**: Combines weak learners sequentially, each correcting the errors of its predecessor.
+- **Stacking**: Combines multiple classification or regression models via a meta-classifier or meta-regressor.
+
+### 6. **Neural Network Models**
+
+Deep learning is a subset of machine learning involving neural networks with many layers (deep networks).
+
+- **Convolutional Neural Networks (CNNs)**: Primarily used for image data.
+- **Recurrent Neural Networks (RNNs)**: Suitable for sequential data like time series or text.
+- **Generative Adversarial Networks (GANs)**: Composed of two networks, a generator and a discriminator, that compete with each other to generate realistic data.
+
+### Applications
+
+- **Healthcare**: Predicting disease outbreaks, medical image analysis.
+- **Finance**: Fraud detection, stock market prediction.
+- **Retail**: Customer segmentation, inventory management.
+- **Automotive**: Self-driving cars, predictive maintenance.
+
+Machine learning models are selected based on the problem type, data characteristics, and the desired outcome. Each model has its own strengths and weaknesses, making it important to experiment and validate performance through cross-validation and other techniques.
+
+Give me a tree of your structured knowledge, ML models, database, etc
+
+Sure! Here is a hierarchical tree structure to represent knowledge related to Machine Learning (ML) models, databases, and related concepts:
+
+### 1. Machine Learning
+
+- 1.1. Types of Learning
+  - 1.1.1. Supervised Learning
+    - 1.1.1.1. Linear Regression
+    - 1.1.1.2. Logistic Regression
+    - 1.1.1.3. Decision Trees
+    - 1.1.1.4. Support Vector Machines (SVM)
+    - 1.1.1.5. Neural Networks
+    - 1.1.1.6. Random Forests
+    - 1.1.1.7. Gradient Boosting Machines (GBM)
+  - 1.1.2. Unsupervised Learning
+    - 1.1.2.1. K-Means Clustering
+    - 1.1.2.2. Hierarchical Clustering
+    - 1.1.2.3. Principal Component Analysis (PCA)
+    - 1.1.2.4. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+  - 1.1.3. Semi-Supervised Learning
+    - 1.1.3.1. Self-Training
+    - 1.1.3.2. Co-Training
+  - 1.1.4. Reinforcement Learning
+    - 1.1.4.1. Q-Learning
+    - 1.1.4.2. Deep Q-Networks (DQN)
+    - 1.1.4.3. Policy Gradient Methods
+  - 1.1.5. Ensemble Learning
+    - 1.1.5.1. Bagging
+    - 1.1.5.2. Boosting
+    - 1.1.5.3. Stacking
+  - 1.1.6. Neural Network Models
+    - 1.1.6.1. Convolutional Neural Networks (CNNs)
+    - 1.1.6.2. Recurrent Neural Networks (RNNs)
+    - 1.1.6.3. Generative Adversarial Networks (GANs)
+
+### 2. Databases
+
+- 2.1. Types of Databases
+  - 2.1.1. Relational Databases
+    - 2.1.1.1. SQL
+      - 2.1.1.1.1. MySQL
+      - 2.1.1.1.2. PostgreSQL
+      - 2.1.1.1.3. SQLite
+      - 2.1.1.1.4. Oracle Database
+      - 2.1.1.1.5. Microsoft SQL Server
+  - 2.1.2. NoSQL Databases
+    - 2.1.2.1. Document Stores
+      - 2.1.2.1.1. MongoDB
+      - 2.1.2.1.2. CouchDB
+    - 2.1.2.2. Key-Value Stores
+      - 2.1.2.2.1. Redis
+      - 2.1.2.2.2. Amazon DynamoDB
+    - 2.1.2.3. Column Family Stores
+      - 2.1.2.3.1. Apache Cassandra
+      - 2.1.2.3.2. HBase
+    - 2.1.2.4. Graph Databases
+      - 2.1.2.4.1. Neo4j
+      - 2.1.2.4.2. ArangoDB
+  - 2.1.3. NewSQL Databases
+    - 2.1.3.1. Google Spanner
+    - 2.1.3.2. CockroachDB
+
+### 3. Data Processing
+
+- 3.1. ETL (Extract, Transform, Load)
+  - 3.1.1. Tools
+    - 3.1.1.1. Apache NiFi
+    - 3.1.1.2. Talend
+    - 3.1.1.3. Informatica
+    - 3.1.1.4. Apache Kafka
+- 3.2. Data Cleaning
+  - 3.2.1. Techniques
+    - 3.2.1.1. Handling Missing Values
+    - 3.2.1.2. Data Normalization
+    - 3.2.1.3. Data Transformation
+- 3.3. Data Integration
+  - 3.3.1. Tools
+    - 3.3.1.1. Apache Camel
+    - 3.3.1.2. MuleSoft
+- 3.4. Data Storage
+  - 3.4.1. Data Lakes
+    - 3.4.1.1. Hadoop
+    - 3.4.1.2. Amazon S3
+  - 3.4.2. Data Warehouses
+    - 3.4.2.1. Snowflake
+    - 3.4.2.2. Amazon Redshift
+    - 3.4.2.3. Google BigQuery
+
+### 4. Model Deployment and Monitoring
+
+- 4.1. Deployment
+  - 4.1.1. Platforms
+    - 4.1.1.1. Docker
+    - 4.1.1.2. Kubernetes
+    - 4.1.1.3. AWS SageMaker
+    - 4.1.1.4. Google AI Platform
+    - 4.1.1.5. Microsoft Azure ML
+- 4.2. Monitoring
+  - 4.2.1. Tools
+    - 4.2.1.1. Prometheus
+    - 4.2.1.2. Grafana
+    - 4.2.1.3. ELK Stack (Elasticsearch, Logstash, Kibana)
+  - 4.2.2. Techniques
+    - 4.2.2.1. Performance Metrics
+    - 4.2.2.2. Alerting and Logging
+
+### 5. Data Visualization
+
+- 5.1. Tools
+  - 5.1.1. Tableau
+  - 5.1.2. Power BI
+  - 5.1.3. Google Data Studio
+  - 5.1.4. Matplotlib
+  - 5.1.5. Seaborn
+  - 5.1.6. D3.js
+
+This tree structure outlines the broad landscape of machine learning, databases, data processing, model deployment and monitoring, and data visualization. Each category is broken down into more specific subcategories to help organize and understand the various elements within these fields.
+
+Sure, I'll provide Python implementations for each of the mentioned models using popular libraries such as Scikit-Learn, TensorFlow, and Keras.
+
+### 1.1.1. Supervised Learning
+
+#### 1.1.1.1. Linear Regression
+
+```
+from sklearn.linear_model import LinearRegression
+from sklearn.datasets import make_regression
+
+X, y = make_regression(n_samples=100, n_features=1, noise=0.1)
+model = LinearRegression()
+model.fit(X, y)
+print(model.coef_, model.intercept_)
+```
+
+#### 1.1.1.2. Logistic Regression
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = LogisticRegression()
+model.fit(X, y)
+print(model.coef_, model.intercept_)
+```
+
+#### 1.1.1.3. Decision Trees
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = DecisionTreeClassifier()
+model.fit(X, y)
+```
+
+#### 1.1.1.4. Support Vector Machines (SVM)
+
+```python
+from sklearn.svm import SVC
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = SVC()
+model.fit(X, y)
+```
+
+#### 1.1.1.5. Neural Networks
+
+```python
+from sklearn.neural_network import MLPClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = MLPClassifier(hidden_layer_sizes=(5, 2), max_iter=1000)
+model.fit(X, y)
+```
+
+#### 1.1.1.6. Random Forests
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = RandomForestClassifier(n_estimators=100)
+model.fit(X, y)
+```
+
+#### 1.1.1.7. Gradient Boosting Machines (GBM)
+
+```python
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = GradientBoostingClassifier(n_estimators=100)
+model.fit(X, y)
+```
+
+### 1.1.2. Unsupervised Learning
+
+#### 1.1.2.1. K-Means Clustering
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
+
+X, _ = make_blobs(n_samples=100, centers=3, n_features=2)
+model = KMeans(n_clusters=3)
+model.fit(X)
+```
+
+#### 1.1.2.2. Hierarchical Clustering
+
+```python
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.datasets import make_blobs
+
+X, _ = make_blobs(n_samples=100, centers=3, n_features=2)
+model = AgglomerativeClustering(n_clusters=3)
+model.fit(X)
+```
+
+#### 1.1.2.3. Principal Component Analysis (PCA)
+
+```python
+from sklearn.decomposition import PCA
+from sklearn.datasets import load_iris
+
+X, _ = load_iris(return_X_y=True)
+model = PCA(n_components=2)
+X_reduced = model.fit_transform(X)
+```
+
+#### 1.1.2.4. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+```python
+from sklearn.manifold import TSNE
+from sklearn.datasets import load_iris
+
+X, _ = load_iris(return_X_y=True)
+model = TSNE(n_components=2)
+X_reduced = model.fit_transform(X)
+```
+
+### 1.1.3. Semi-Supervised Learning
+
+#### 1.1.3.1. Self-Training
+
+```python
+from sklearn.semi_supervised import SelfTrainingClassifier
+from sklearn.datasets import make_classification
+from sklearn.svm import SVC
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+y[::2] = -1  # Set half of the labels to -1 (unlabeled)
+base_classifier = SVC(probability=True)
+model = SelfTrainingClassifier(base_classifier)
+model.fit(X, y)
+```
+
+#### 1.1.3.2. Co-Training
+
+Co-Training is less straightforward and typically involves more custom implementation. Here’s a simplified example:
+
+```python
+import numpy as np
+from sklearn.svm import SVC
+from sklearn.datasets import make_classification
+
+# Generate dataset
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+X1, X2 = X[:, :1], X[:, 1:]  # Split features for two views
+y[::2] = -1  # Unlabeled data
+
+# Initialize classifiers
+model1 = SVC(probability=True)
+model2 = SVC(probability=True)
+
+# Co-Training loop
+for _ in range(10):  # Limited iterations for simplicity
+    model1.fit(X1[y != -1], y[y != -1])
+    model2.fit(X2[y != -1], y[y != -1])
+
+    y1 = model1.predict(X1[y == -1])
+    y2 = model2.predict(X2[y == -1])
+
+    y[y == -1] = np.where(np.abs(y1 - 0.5) > np.abs(y2 - 0.5), y1, y2)
+```
+
+### 1.1.4. Reinforcement Learning
+
+#### 1.1.4.1. Q-Learning
+
+```python
+import numpy as np
+
+# Environment setup (Grid world example)
+grid_size = 4
+n_actions = 4  # Up, down, left, right
+Q = np.zeros((grid_size, grid_size, n_actions))
+
+# Hyperparameters
+alpha = 0.1
+gamma = 0.9
+epsilon = 0.1
+
+# Q-Learning algorithm
+for episode in range(1000):
+    state = (0, 0)  # Starting state
+    done = False
+    while not done:
+        if np.random.rand() < epsilon:
+            action = np.random.randint(n_actions)
+        else:
+            action = np.argmax(Q[state])
+
+        # Take action, observe new state and reward
+        new_state = (min(grid_size - 1, max(0, state[0] + (action == 1) - (action == 0))),
+                     min(grid_size - 1, max(0, state[1] + (action == 3) - (action == 2))))
+
+        reward = -1 if new_state != (grid_size-1, grid_size-1) else 0
+        done = new_state == (grid_size-1, grid_size-1)
+
+        # Update Q-value
+        Q[state][action] += alpha * (reward + gamma * np.max(Q[new_state]) - Q[state][action])
+        state = new_state
+```
+
+#### 1.1.4.2. Deep Q-Networks (DQN)
+
+```python
+import tensorflow as tf
+from tensorflow.keras import models, layers, optimizers
+
+# Environment and hyperparameters setup
+state_size = 4
+action_size = 2
+learning_rate = 0.001
+gamma = 0.95
+epsilon = 1.0
+epsilon_min = 0.01
+epsilon_decay = 0.995
+batch_size = 32
+memory = []
+
+# DQN model
+model = models.Sequential([
+    layers.Dense(24, input_dim=state_size, activation='relu'),
+    layers.Dense(24, activation='relu'),
+    layers.Dense(action_size, activation='linear')
+])
+model.compile(loss='mse', optimizer=optimizers.Adam(lr=learning_rate))
+
+# DQN algorithm
+def replay():
+    minibatch = np.random.choice(memory, batch_size)
+    for state, action, reward, next_state, done in minibatch:
+        target = reward
+        if not done:
+            target += gamma * np.amax(model.predict(next_state)[0])
+        target_f = model.predict(state)
+        target_f[0][action] = target
+        model.fit(state, target_f, epochs=1, verbose=0)
+
+# Simulate environment interaction
+for episode in range(1000):
+    state = np.reshape((0, 0, 0, 0), [1, state_size])  # Starting state
+    for time in range(500):
+        if np.random.rand() <= epsilon:
+            action = np.random.choice(action_size)
+        else:
+            action = np.argmax(model.predict(state)[0])
+
+        # Take action, observe new state and reward
+        next_state = np.reshape((0, 0, 0, 0), [1, state_size])  # Update with environment's next state
+        reward = 1  # Update with environment's reward
+        done = False  # Update with environment's done flag
+        memory.append((state, action, reward, next_state, done))
+        state = next_state
+
+        if done:
+            epsilon = max(epsilon_min, epsilon_decay * epsilon)
+            break
+        if len(memory) > batch_size:
+            replay()
+```
+
+#### 1.1.4.3. Policy Gradient Methods
+
+```python
+import tensorflow as tf
+from tensorflow.keras import models, layers, optimizers
+
+# Environment and hyperparameters setup
+state_size = 4
+action_size = 2
+learning_rate = 0.001
+
+# Policy Gradient model
+model = models.Sequential([
+    layers.Dense(24, input_dim=state_size, activation='relu'),
+    layers.Dense(24, activation='relu'),
+    layers.Dense(action_size, activation='softmax')
+])
+model.compile(loss='categorical_crossentropy', optimizer=optimizers.Adam(lr=learning_rate))
+
+# Policy Gradient algorithm
+def discount_rewards(r):
+    discounted_r = np.zeros_like(r)
+    running_add = 0
+    for t in reversed(range(0, r.size)):
+        running_add = running_add * gamma + r[t]
+        discounted_r[t] = running_add
+    return discounted_r
+
+# Simulate environment interaction
+for episode in range(1000):
+    state = np.reshape((0, 0, 0, 0), [1, state_size])  # Starting state
+    states, actions, rewards = [], [], []
+    for time in range(500):
+        action_probs = model.predict(state)
+        action = np.random.choice(action_size, p=action_probs[0])
+
+        next_state = np.reshape((0, 0, 0, 0), [1, state_size])  # Update with environment's next state
+        reward = 1  # Update with environment's reward
+        done = False  # Update with environment's done flag
+
+        states.append(state)
+        actions.append(action)
+        rewards.append(reward)
+
+        state = next_state
+
+        if done:
+            discounted_rewards = discount_rewards(np.array(rewards))
+            discounted_rewards -= np.mean(discounted_rewards)
+            discounted_rewards /= np.std(discounted_rewards)
+
+            gradients = np.vstack(actions) - np.vstack(action_probs)
+            gradients *= discounted_rewards
+            gradients *= -1
+
+            X = np.vstack(states)
+            y = gradients
+
+            model.train_on_batch(X, y)
+            break
+```
+
+### 1.1.5. Ensemble Learning
+
+#### 1.1.5.1. Bagging
+
+```python
+from sklearn.ensemble import BaggingClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=10)
+model.fit(X, y)
+```
+
+#### 1.1.5.2. Boosting
+
+```python
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+model = AdaBoostClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=50)
+model.fit(X, y)
+```
+
+#### 1.1.5.3. Stacking
+
+```python
+from sklearn.ensemble import StackingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.datasets import make_classification
+
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2)
+estimators = [
+    ('dt', DecisionTreeClassifier()),
+    ('svm', SVC())
+]
+model = StackingClassifier(estimators=estimators, final_estimator=LogisticRegression())
+model.fit(X, y)
+```
+
+### 1.1.6. Neural Network Models
+
+#### 1.1.6.1. Convolutional Neural Networks (CNNs)
+
+```python
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models
+
+# Load and preprocess dataset
+(train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
+train_images, test_images = train_images / 255.0, test_images / 255.0
+
+# CNN model
+model = models.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
+    layers.MaxPooling2D((2, 2)),
+    layers.Conv2D(64, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)),
+    layers.Conv2D(64, (3, 3), activation='relu'),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+# Train the model
+model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
+```
+
+#### 1.1.6.2. Recurrent Neural Networks (RNNs)
+
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models
+from tensorflow.keras.datasets import imdb
+from tensorflow.keras.preprocessing import sequence
+
+# Load and preprocess dataset
+max_features = 20000
+maxlen = 100
+(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=max_features)
+x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
+x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
+
+# RNN model
+model = models.Sequential([
+    layers.Embedding(max_features, 128, input_length=maxlen),
+    layers.SimpleRNN(128, activation='relu', return_sequences=True),
+    layers.SimpleRNN(128, activation='relu'),
+    layers.Dense(1, activation='sigmoid')
+])
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+# Train the model
+model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
+```
+
+#### 1.1.6.3. Generative Adversarial Networks (GANs)
+
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models
+import numpy as np
+
+# GAN components
+def build_generator():
+    model = models.Sequential([
+        layers.Dense(256, activation='relu', input_dim=100),
+        layers.BatchNormalization(),
+        layers.Dense(512, activation='relu'),
+        layers.BatchNormalization(),
+        layers.Dense(1024, activation='relu'),
+        layers.BatchNormalization(),
+        layers.Dense(28*28*1, activation='tanh'),
+        layers.Reshape((28, 28, 1))
+    ])
+    return model
+
+def build_discriminator():
+    model = models.Sequential([
+        layers.Flatten(input_shape=(28, 28, 1)),
+        layers.Dense(512, activation='relu'),
+        layers.Dense(256, activation='relu'),
+        layers.Dense(1, activation='sigmoid')
+    ])
+    return model
+
+# Compile models
+generator = build_generator()
+discriminator = build_discriminator()
+discriminator.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+z = layers.Input(shape=(100,))
+img = generator(z)
+discriminator.trainable = False
+validity = discriminator(img)
+combined = models.Model(z, validity)
+combined.compile(loss='binary_crossentropy', optimizer='adam')
+
+# Training loop
+def train(epochs, batch_size=128):
+    (X_train, _), (_, _) = tf.keras.datasets.mnist.load_data()
+    X_train = (X_train.astype(np.float32) - 127.5) / 127.5
+    X_train = np.expand_dims(X_train, axis=3)
+
+    valid = np.ones((batch_size, 1))
+    fake = np.zeros((batch_size, 1))
+
+    for epoch in range(epochs):
+        idx = np.random.randint(0, X_train.shape[0], batch_size)
+        imgs = X_train[idx]
+
+        noise = np.random.normal(0, 1, (batch_size, 100))
+        gen_imgs = generator.predict(noise)
+
+        d_loss_real = discriminator.train_on_batch(imgs, valid)
+        d_loss_fake = discriminator.train_on_batch(gen_imgs, fake)
+        d_loss = 0.5 * np.add(d_loss_real, d_loss_fake)
+
+        g_loss = combined.train_on_batch(noise, valid)
+
+        print(f"{epoch}/{epochs} [D loss: {d_loss[0]} | acc.: {100*d_loss[1]}%] [G loss: {g_loss}]")
+
+# Start training
+train(epochs=10000, batch_size=64)
+```
+
+These implementations cover a broad range of machine learning models using Python and relevant libraries. Adjustments may be needed based on specific requirements and datasets.
