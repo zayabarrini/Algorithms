@@ -1,3 +1,4 @@
+```
 Zayas-Algorithms/
 ├── 01_Digital_Circuits/
 │   ├── SystemVerilog/
@@ -31,6 +32,4 @@ Zayas-Algorithms/
     ├── Sensor_Networks/
     ├── Edge_Computing/
     └── Outdoor_Applications/
-
-
-    
+```
