@@ -1,3 +1,85 @@
+Algorithms of all algorithms
+
+Heapsort
+Quicksort
+Sorting in Linear Time
+Medians and Order Statistics
+Data Structures
+10.1 Stacks and queues
+10.2 Linked lists
+10.3 Implementing pointers and objects
+10.4 Representing rooted trees
+Hash Tables
+Binary Search Trees
+Red-Black Trees
+Greedy Algorithms
+Amortized Analysis
+B-Trees
+Fibonacci Heaps
+Data Structures for Disjoint Sets
+Graph Algorithms
+Minimum Spanning Trees
+Single-Source Shortest Paths
+Maximum Flow
+Flow networks   
+Multithreaded Algorithms
+Polynomials and the FFT
+Number-Theoretic Algorithms
+The Chinese remainder theorem
+String Matching
+NP-completeness and reducibility
+NP-completeness proofs
+NPHard Problems
+Algorithms and Protocols for Wireless and Mobile Ad Hoc Networks
+Classification of Computer Games
+Intractable Problems and Approximation Algorithms
+The Art of Proving Hardness
+
+**CTC-17 Inteligência Artificial**
+**Conteúdo:** Conceituação, aplicações. Resolução de problemas: técnicas e métodos, representação, heurísticas, decomposição de problemas, jogos. Estratégias de busca e decomposição, representação, algoritmo A*. Algoritmos genéticos. Aprendizagem de máquina: aprendizado indutivo, árvores de decisão e modelos de redes neurais artificiais para aprendizado supervisionado, não-supervisionado e por reforço. Introdução a lógica nebulosa e teoria de conjuntos nebulosos. Regras de inferência nebulosas. Fundamentos de redes bayesianas.
+
+**CES-25 Arquitetura para Alto Desempenho**
+**Conteúdo:** Unidades básicas de um computador: processadores, memória e dispositivos de entrada e saída. Técnicas para aumento de desempenho de computadores. Memória cache, entrelaçada e virtual. Segmentação do ciclo de instrução, das unidades funcionais e do acesso à memória. Computadores com conjunto reduzido de instruções. Linha de execução de instruções (pipeline). Microprograma de unidade central de processamento. Processadores Superescalares. Execução especulativa de código. Máquinas paralelas: computadores vetoriais, computadores matriciais, multiprocessadores.
+
+**EEA- 21 – Circuitos Digitais**
+Sistemas numéricos e códigos. Álgebra Booleana. Portas lógicas. Circuitos combinatórios: síntese, análise; lógica de dois níveis e multinível. Minimização
+lógica. Funções combinatórias. Redes iterativas. Aritmética digital inteira: operações em sinal e magnitude, complemento de dois e BCD; circuitos ripple-carry e carry look-ahead ; projeto de unidade lógica aritmética. Circuitos sequenciais: modelos de máquinas de estado finito (MEF), conversão de modelos e minimização de estados. Síntese de MEF assíncrona: conceitos de hazard , corrida crítica e modos de operação; projeto de latches, flip-flops e interfaces. Síntese e análise de MEF síncrona: aplicações gerais, contadores, registradores e divisores de frequência. Analise de temporização. Implementação de algoritmos por hardware síncrono: MEF com datapath; síntese datapath. Conceitos de dispositivos programáveis (PLD). Projeto de circuitos digitais implementados em PLD. Introdução a VHDL. 
+
+# Psychoanalysis of IA
+
+Chapter 1: The Stupidity of Intelligence
+1.1 AI: Failure, Trauma, Dupery
+1.2 Omega Numbers and Suture
+1.3 Malabou and the Blue Brain
+1.4 Anti-Philosophy: Thinking or Being?
+Chapter 2: The Artificial Object
+2.1 Black Mirror and the Lathouse
+2.2 The Prosthetic God
+2.3 Baudrillard’s Obscene Robots
+2.4 Her (Voice)
+Chapter 3: The Sexual Abyss
+3.1 Sense-Absexe
+3.2 Phallic and Feminine Enjoyment
+3.3 Seven Paradigms of Jouissance?
+3.4 What is a Sexbot?
+Part II
+Chapter 4: What Can I Know? Artificial Enjoyment
+4.1 Copjec and the Antinomy of AI
+4.2 Turing Tests: Knowing or Enjoying?
+4.3 Man or Woman, Dead or Alive
+4.4 $ex Machina
+Chapter 5: What Should I Do? Patipolitics: From Sade to Killian
+5.1 Overexposure: Priapalandian Patipolitics
+5.2 Kant avec Sade
+5.3 Undead Suffering
+5.4 The Lamella: Lost Enjoyment
+Chapter 6: What Can I Hope For? Reproduction, Replication, Immortality
+6.1 Baby X
+6.2 Blade Runner 9: What is a Father?
+6.3 Reproduce or Die: What is a Mother?
+6.4 Divine Rays of Creation: Artificial Intelligence as Saint
+Conclusion: What is Man? Between Matheme and Anxiety
+
 ### Vocabulário de Engenharia eletrônica, Computação
 
 #### Introduction to Algorithms

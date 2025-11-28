@@ -809,7 +809,8 @@ normé.
 3. Suites récurrentes linéaires
 4. Césaro and Co
 Exercices, solutions
-I FoundationsIntroduction to Algorithms
+I Foundations
+# Introduction to Algorithms
 Introduction
 The Role of Algorithms in Computing
 1.1 Algorithms
@@ -910,7 +911,8 @@ B-Trees
 Fibonacci Heaps
 19.1 Structure of Fibonacci heaps
 19.2 Mergeable-heap operations
-19.3 Decreasing a key and deleting a node19.4 Bounding the maximum degree
+19.3 Decreasing a key and deleting a node19.
+4 Bounding the maximum degree
 van Emde Boas Trees
 20.1 Preliminary approaches
 20.2 A recursive structure
@@ -1454,7 +1456,8 @@ Mariana Caiaffa, Raquel dei Guídice
 Perfil epidemiológico dos adolescentes atendidos no CMT - período de janeiro de  a abril de
 Carla Silveira
 Sobre os autores-
-IntroductionLearning Artificial Intelligence for Humans
+Introduction
+# Learning Artificial Intelligence for Humans
 Chapter 1: Neural Network Basics
 Chapter 2: Self-Organizing Maps
 Chapter 3: Hopfield & Boltzmann Machines
@@ -1471,6 +1474,7 @@ Chapter 13: Time Series and Recurrent Networks
 Chapter 14: Architecting Neural Networks
 Chapter 15: Visualization
 Chapter 16: Modeling with Neural Networks
+
 CHAPTER 1 Using neural nets to recognize handwritten digitsLearning Neural Networks and Deep Learning 
 CHAPTER 2 How the backpropagation algorithm works
 CHAPTER 3 Improving the way neural networks learn
@@ -1478,11 +1482,12 @@ CHAPTER 4 A visual proof that neural nets can compute any function
 CHAPTER 5 Why are deep neural networks hard to train?
 CHAPTER 6 Deep learning
 Appendix: Is there a simple algorithm for intelligence?
-The Idea of RecursionAlgorithms Thinking recursively
+The Idea of Recursion
+Algorithms Thinking recursively
 II An Illustration of the Recursive Approach
 Mondrian and Computer Art
 Characteristics of Recursive Algorithms
-N onterminating Recursion
+Non-terminating Recursion
 Thinking about RecursionTwo Perspectives
 Mathematical Preliminaries
 Mathematical Induction
@@ -1516,7 +1521,8 @@ The Control Stack Model
 Simulating Recursion
 Bibliography
 Index
-IntroductionAlgorithms of all algorithms
+Introduction
+# Algorithms of all algorithms
 I
 Recursion
 Recursion
@@ -1565,7 +1571,8 @@ VII
 Appendices
 A Proofs by Induction
 B Solving Recurrences
-Algorithms for Mobile Ad Hoc NetworksAlgorithms and Protocols for Wireless and Mobile Ad Hoc Networks
+# Algorithms for Mobile Ad Hoc Networks
+Algorithms and Protocols for Wireless and Mobile Ad Hoc Networks
 Azzedine Boukerche, Daniel Câmara, Antonio AFLoureiro,
 and Carlos MSFigueiredo
 Establishing a Communication Infrastructure in Ad Hoc Networks
@@ -1824,7 +1831,8 @@ Selfsimilar Traffic
 Related Work
 Bibliography
 Index
-Practical Algorithm DesignThe Algorithm Design Manual
+Practical Algorithm Design
+The Algorithm Design Manual
 Introduction to Algorithm Design
 Robot Tour Optimization
 Selecting the Right Jobs
@@ -1963,7 +1971,7 @@ Minimum Spanning Tree
 Shortest Path
 Transitive Closure and Reduction
 Matching
-Eulerian CycleChinese Postman
+Eulerian Cycle Chinese Postman
 Edge and Vertex Connectivity
 Network Flow
 Drawing Graphs Nicely
@@ -2015,7 +2023,7 @@ Online Bibliographic Resources
 Professional Consulting Services
 Bibliography
 Index
-FundamentalsAlgorithms, Robert Sedgewick
+Fundamentals Algorithms, Robert Sedgewick
 Basic Programming Model
 Data Abstraction
 Bags, Queues, and Stacks

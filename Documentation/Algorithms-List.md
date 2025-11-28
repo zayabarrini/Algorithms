@@ -1,3 +1,113 @@
+IA Algorithm Agent:
+The agent will generate 120 algorithms across all your specified categories, each with complete documentation, implementation stubs, and test frameworks following your exact requirements.
+
+Algorithm of Algorithms
+Depth, Breadth
+Problem - Sell
+
+List of Generic Hard Problems
+on DeepSeek: Each algorithm has its own window
+
+5 Algorithms for each = 120 Algorithms
+
+- SystemVerilog/AI_Accelerators/
+- SystemVerilog/Security_Modules/
+- SystemVerilog/Quantum_Interfaces/
+- TCL_Scripts/EDA_Automation/
+- TCL_Scripts/Verification_Flows/
+- TCL_Scripts/Physical_Design/
+- FPGA_Implementations/
+- MultiScale_Framework/Quantum_Scale/
+- MultiScale_Framework/Atomic_Scale/
+- MultiScale_Framework/Mesoscale/
+- MultiScale_Framework/System_Scale/
+- Nuclear_Applications/
+- Materials_Science/
+- Optimization/
+- Computer_Vision/
+- NLP/
+- Reinforcement_Learning/
+- Pathfinding/
+- Optimization/
+- Game_Theory/
+- Quantum_Classical_Hybrid/
+- Sensor_Networks/
+- Edge_Computing/
+- Outdoor_Applications/
+
+Command to generate .md file for each algorithm in its proper folder
+example:
+.md Content: Prompt 1 and 2
+File generation + Analysis
+Prompt 1 should generate project files
+Prompt 2 should generate tests
+
+/home/zaya/Downloads/Zayas/Zayas-Algorithms/01_Digital_Circuits/FPGA_Implementations/LUT.md
+/home/zaya/Downloads/Zayas/Zayas-Algorithms
+tree
+
+```
+.
+├── 01_Digital_Circuits
+│   ├── FPGA_Implementations
+│   │   ├── LUT.md
+│   │   └── README.md
+│   ├── README.md
+│   ├── SystemVerilog
+│   │   ├── AI_Accelerators
+│   │   ├── Quantum_Interfaces
+│   │   ├── README.md
+│   │   └── Security_Modules
+│   └── TCL_Scripts
+│       ├── EDA_Automation
+│       ├── Physical_Design
+│       ├── README.md
+│       └── Verification_Flows
+├── 02_Physics_Simulations
+│   ├── Materials_Science
+│   │   └── README.md
+│   ├── MultiScale_Framework
+│   │   ├── Atomic_Scale
+│   │   ├── Mesoscale
+│   │   ├── Quantum_Scale
+│   │   ├── README.md
+│   │   └── System_Scale
+│   ├── Nuclear_Applications
+│   │   └── README.md
+│   └── README.md
+├── 03_ML_Algorithms
+│   ├── Computer_Vision
+│   │   ├── Convolutional-Neural-Networks.md
+│   │   └── README.md
+│   ├── IDE-star.md
+│   ├── IDE-star.py
+│   ├── NLP
+│   │   └── README.md
+│   ├── Optimization
+│   │   └── README.md
+│   ├── README.md
+│   └── Reinforcement_Learning
+│       └── README.md
+├── 04_Advanced_Problems
+│   ├── Game_Theory
+│   │   └── README.md
+│   ├── Optimization
+│   │   └── README.md
+│   ├── Pathfinding
+│   │   └── README.md
+│   ├── Quantum_Classical_Hybrid
+│   │   └── README.md
+│   └── README.md
+├── 05_Field_Integration
+│   ├── Edge_Computing
+│   │   └── README.md
+│   ├── Outdoor_Applications
+│   │   └── README.md
+│   ├── README.md
+│   └── Sensor_Networks
+│       └── README.md
+```
+
 # 🎯 Essential Algorithms for Zayas-Algorithms Framework
 
 ## **01_Digital_Circuits/**
@@ -255,3 +365,9 @@
 2. **Field Deployment Optimization** + **Real-Time System Integration**
 
 This prioritized list ensures you master the most impactful algorithms that bridge digital circuits, physics simulations, and real-world applications, creating a truly interdisciplinary expertise.
+
+
+# For Interviews
+
+Data Structures: Arrays, Strings, Linked Lists, Stacks, Queues, Hash Tables, Trees (Binary, BST, Tries, Heaps), Graphs.
+Algorithms: Binary Search, Sorting, BFS/DFS, Recursion, Dynamic Programming, Two Pointers, Sliding Window.
