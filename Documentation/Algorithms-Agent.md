@@ -12,7 +12,7 @@ Prompt 2 should generate tests
 Prompt 1:
 
 ```
-Explanation, Implementation (python) and analysis
+Explanation, Implementation and analysis
 Time Complexity (The "How Fast")
 - Best Case (Ω - Omega) - Average Case (Θ - Theta) - Worst Case (O - Omicron) - In Practice 
 Space Complexity (The "How Much Memory")
