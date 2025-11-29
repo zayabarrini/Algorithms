@@ -1,73 +1,55 @@
-# Binary Search: Complete Guide
-
-## Explanation
-
-Binary Search is an efficient **divide-and-conquer** algorithm for finding an element in a **sorted** array. It works by repeatedly dividing the search interval in half, comparing the target value with the middle element, and eliminating half of the remaining elements at each step.
-
-### Key Insight
-- If the target equals the middle element → found
-- If target < middle → search left half
-- If target > middle → search right half
-
-## Implementation
-
-### Basic Python Implementation
-
-```python
 def binary_search(arr, target):
     """
     Basic iterative binary search implementation
-    
+
     Args:
         arr: sorted list of elements
         target: element to search for
-    
+
     Returns:
         index of target if found, -1 otherwise
     """
     left, right = 0, len(arr) - 1
-    
+
     while left <= right:
         mid = (left + right) // 2
-        
+
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
             left = mid + 1
         else:
             right = mid - 1
-    
+
     return -1
+
 
 # Recursive implementation
 def binary_search_recursive(arr, target, left=0, right=None):
     if right is None:
         right = len(arr) - 1
-    
+
     if left > right:
         return -1
-    
+
     mid = (left + right) // 2
-    
+
     if arr[mid] == target:
         return mid
     elif arr[mid] < target:
         return binary_search_recursive(arr, target, mid + 1, right)
     else:
         return binary_search_recursive(arr, target, left, mid - 1)
-```
 
-### Advanced Variants
 
-```python
 def binary_search_leftmost(arr, target):
     """Find leftmost occurrence of target"""
     left, right = 0, len(arr) - 1
     result = -1
-    
+
     while left <= right:
         mid = (left + right) // 2
-        
+
         if arr[mid] == target:
             result = mid
             right = mid - 1  # Continue searching left
@@ -75,17 +57,18 @@ def binary_search_leftmost(arr, target):
             left = mid + 1
         else:
             right = mid - 1
-    
+
     return result
+
 
 def binary_search_rightmost(arr, target):
     """Find rightmost occurrence of target"""
     left, right = 0, len(arr) - 1
     result = -1
-    
+
     while left <= right:
         mid = (left + right) // 2
-        
+
         if arr[mid] == target:
             result = mid
             left = mid + 1  # Continue searching right
@@ -93,237 +76,139 @@ def binary_search_rightmost(arr, target):
             left = mid + 1
         else:
             right = mid - 1
-    
+
     return result
-```
 
-## Time Complexity Analysis
 
-### Theoretical Analysis
-
-| Case | Notation | Time Complexity | Description |
-|------|----------|-----------------|-------------|
-| **Best Case** | Ω(1) | O(1) | Target is the middle element |
-| **Average Case** | Θ(log n) | O(log n) | Target is randomly distributed |
-| **Worst Case** | O(log n) | O(log n) | Target not present or at extremes |
-
-### Mathematical Derivation
-At each step, search space halves:
-- After 1 step: n/2 elements
-- After 2 steps: n/4 elements
-- After k steps: n/2^k elements
-
-Search ends when: n/2^k ≤ 1  
-→ k ≤ log₂n  
-→ **O(log n)**
-
-### In Practice
-```python
-# Performance comparison
-import time
-import math
-
-def measure_performance():
-    sizes = [10**3, 10**6, 10**9]
-    
-    for size in sizes:
-        steps = math.log2(size)
-        print(f"Array size {size:,}: ~{steps:.1f} steps needed")
-        
-# Output:
-# Array size 1,000: ~10.0 steps needed
-# Array size 1,000,000: ~20.0 steps needed  
-# Array size 1,000,000,000: ~30.0 steps needed
-```
-
-## Space Complexity
-
-### Analysis
-| Type | Complexity | Description |
-|------|------------|-------------|
-| **Iterative** | O(1) auxiliary | Only uses pointers (left, right, mid) |
-| **Recursive** | O(log n) auxiliary | Call stack depth = height of recursion tree |
-| **Total Space** | O(n) | Input array storage dominates |
-
-### Memory Usage Comparison
-```python
-def space_analysis():
-    # Iterative: O(1) auxiliary space
-    # Only needs: left, right, mid (3 integers)
-    
-    # Recursive: O(log n) auxiliary space  
-    # Needs call stack with depth log n
-    
-    # For n = 1,000,000:
-    # - Iterative: ~24 bytes (3 integers)
-    # - Recursive: ~20 * log2(1M) ≈ 400 bytes
-```
-
-## Correctness & Assumptions
-
-### Preconditions
-```python
 def validated_binary_search(arr, target):
     """Binary search with input validation"""
-    
+
     # PRECONDITIONS
     if not arr:
         raise ValueError("Array cannot be empty")
-    
-    if not all(arr[i] <= arr[i+1] for i in range(len(arr)-1)):
+
+    if not all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1)):
         raise ValueError("Array must be sorted")
-    
+
     # MAIN ALGORITHM
     left, right = 0, len(arr) - 1
-    
+
     while left <= right:
         mid = (left + right) // 2
-        
+
         if arr[mid] == target:
             return mid  # POSTCONDITION: target found at index mid
         elif arr[mid] < target:
             left = mid + 1
         else:
             right = mid - 1
-    
-    return -1  # POSTCONDITION: target not in array
-```
 
-### Edge Cases
-```python
+    return -1  # POSTCONDITION: target not in array
+
+
 def test_edge_cases():
     test_cases = [
         # (array, target, expected)
-        ([1], 1, 0),           # Single element, found
-        ([1], 2, -1),          # Single element, not found
-        ([], 1, -1),           # Empty array
-        ([1, 3, 5], 1, 0),     # Target at beginning
-        ([1, 3, 5], 5, 2),     # Target at end
-        ([1, 3, 5], 3, 1),     # Target in middle
-        ([1, 3, 5], 0, -1),    # Target less than all
-        ([1, 3, 5], 6, -1),    # Target greater than all
+        ([1], 1, 0),  # Single element, found
+        ([1], 2, -1),  # Single element, not found
+        ([], 1, -1),  # Empty array
+        ([1, 3, 5], 1, 0),  # Target at beginning
+        ([1, 3, 5], 5, 2),  # Target at end
+        ([1, 3, 5], 3, 1),  # Target in middle
+        ([1, 3, 5], 0, -1),  # Target less than all
+        ([1, 3, 5], 6, -1),  # Target greater than all
         ([1, 2, 2, 2, 3], 2, 2),  # Duplicates (behavior depends on variant)
     ]
-    
+
     for arr, target, expected in test_cases:
         result = binary_search(arr, target)
         assert result == expected, f"Failed for {arr}, target {target}"
-```
 
-## Practical Considerations
 
-### Constant Factors
-```python
 def optimized_binary_search(arr, target):
     """Optimized version with reduced comparisons"""
     left, right = 0, len(arr) - 1
-    
+
     while right - left > 1:
         mid = left + (right - left) // 2  # Avoids overflow
-        
+
         if arr[mid] < target:
             left = mid
         else:
             right = mid
-    
+
     # Final comparisons
     if arr[left] == target:
         return left
     if arr[right] == target:
         return right
     return -1
-```
 
-### Cache Performance
-Binary search has **poor cache performance** compared to linear search for small arrays:
 
-```python
-def cache_analysis():
-    """
-    Binary search vs Linear search cache behavior:
-    
-    Binary Search:
-    - Random memory access pattern
-    - Poor spatial locality
-    - Each access likely cache miss
-    
-    Linear Search:  
-    - Sequential memory access
-    - Excellent spatial locality
-    - Multiple elements per cache line
-    
-    Crossover point: Typically ~64-128 elements
-    """
-    pass
-```
-
-### Real-world Data Patterns
-
-```python
 def adaptive_search(arr, target):
     """Adaptive approach based on data characteristics"""
-    
+
     # For very small arrays, use linear search
     if len(arr) <= 64:
         for i, val in enumerate(arr):
             if val == target:
                 return i
         return -1
-    
+
     # For mostly sequential access patterns
     if is_mostly_sequential_access():
         return interpolation_search(arr, target)
-    
+
     # Default to binary search
     return binary_search(arr, target)
+
 
 def interpolation_search(arr, target):
     """Better for uniformly distributed data"""
     left, right = 0, len(arr) - 1
-    
+
     while left <= right and arr[left] <= target <= arr[right]:
         if left == right:
             return left if arr[left] == target else -1
-        
+
         # Estimate position using interpolation
         pos = left + ((target - arr[left]) * (right - left)) // (arr[right] - arr[left])
-        
+
         if arr[pos] == target:
             return pos
         elif arr[pos] < target:
             left = pos + 1
         else:
             right = pos - 1
-    
+
     return -1
-```
 
-## Performance Comparison
 
-```python
 import time
 import random
 
+
 def benchmark_searches():
     sizes = [100, 1000, 10000, 100000]
-    
+
     for size in sizes:
         arr = sorted(random.sample(range(size * 10), size))
         target = random.choice(arr)  # Existing element
-        
+
         # Time binary search
         start = time.time()
         for _ in range(1000):
             binary_search(arr, target)
         binary_time = time.time() - start
-        
+
         # Time linear search (for comparison)
         start = time.time()
         for _ in range(1000):
             linear_search(arr, target)
         linear_time = time.time() - start
-        
+
         print(f"Size {size:6d}: Binary {binary_time:.4f}s, Linear {linear_time:.4f}s")
+
 
 def linear_search(arr, target):
     """Linear search for comparison"""
@@ -331,23 +216,3 @@ def linear_search(arr, target):
         if val == target:
             return i
     return -1
-```
-
-## Key Takeaways
-
-1. **Use binary search when**:
-   - Data is sorted
-   - Random access is available
-   - Search operations dominate updates
-
-2. **Avoid binary search when**:
-   - Data is unsorted (sort first or use hash table)
-   - Array is very small (< 64 elements)
-   - Memory access patterns favor sequential reads
-
-3. **Optimization opportunities**:
-   - Use iterative version to save stack space
-   - Consider interpolation search for uniform data
-   - Use branchless variants for micro-optimization
-
-Binary search remains one of the most fundamental and powerful algorithms in computer science, demonstrating the power of logarithmic time complexity for solving search problems efficiently.
