@@ -51,13 +51,10 @@ tree
 ├── 01_Digital_Circuits
 │   ├── FPGA_Implementations
 │   │   ├── LUT.md
-│   │   └── README.md
-│   ├── README.md
 │   ├── SystemVerilog
 │   │   ├── AI_Accelerators
 │   │   ├── Quantum_Interfaces
-│   │   ├── README.md
-│   │   └── Security_Modules
+│   │   │   └── Security_Modules
 │   └── TCL_Scripts
 │       ├── EDA_Automation
 │       ├── Physical_Design
@@ -65,47 +62,29 @@ tree
 │       └── Verification_Flows
 ├── 02_Physics_Simulations
 │   ├── Materials_Science
-│   │   └── README.md
 │   ├── MultiScale_Framework
 │   │   ├── Atomic_Scale
 │   │   ├── Mesoscale
 │   │   ├── Quantum_Scale
-│   │   ├── README.md
-│   │   └── System_Scale
+│   │   │   └── System_Scale
 │   ├── Nuclear_Applications
-│   │   └── README.md
-│   └── README.md
 ├── 03_ML_Algorithms
 │   ├── Computer_Vision
 │   │   ├── Convolutional-Neural-Networks.md
-│   │   └── README.md
 │   ├── IDE-star.md
 │   ├── IDE-star.py
 │   ├── NLP
-│   │   └── README.md
 │   ├── Optimization
-│   │   └── README.md
-│   ├── README.md
 │   └── Reinforcement_Learning
-│       └── README.md
 ├── 04_Advanced_Problems
 │   ├── Game_Theory
-│   │   └── README.md
 │   ├── Optimization
-│   │   └── README.md
 │   ├── Pathfinding
-│   │   └── README.md
 │   ├── Quantum_Classical_Hybrid
-│   │   └── README.md
-│   └── README.md
 ├── 05_Field_Integration
 │   ├── Edge_Computing
-│   │   └── README.md
 │   ├── Outdoor_Applications
-│   │   └── README.md
-│   ├── README.md
 │   └── Sensor_Networks
-│       └── README.md
 ```
 
 # 🎯 Essential Algorithms for Zayas-Algorithms Framework
